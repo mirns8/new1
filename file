@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   float c1;
+   printf("Выберите пункт\n 1.Действия с числами\n 2.Корень\n 3.Возведение в степень\n 4.Вычисление логарифма\n");
+   scanf("%f", &c1);
+   if(c1==1)
+   {
+   float a, b; 
+   printf("Напишите два любых числа\n");
+   scanf("%f", &a);
+   scanf("%f", &b);
+   float q=a+b; 
+   float g=a-b;
+   float e=a/b;
+   float j=a*b;
+   printf("+:%f\n", q);
+   printf("-:%f\n", g);
+   printf("/:%f\n", e);
+   printf("*:%f\n", j);
+   return 1;
+   }
+   
+   else if(c1==2)
+   {
+   float e;
+   printf("Введите корень\n");
+   scanf("%f", &e);
+   float s=sqrt(e);
+   printf("Корень %f\n", s);
+   return 2;
+   }
+   else if(c1==3)
+   {
+   float kva1, kva2;
+   printf("Введите число\n");
+   scanf("%f", &kva1);
+   printf("Степень\n");
+   scanf("%f", &kva2);
+   float chis=pow(kva1, kva2);
+   printf("Возведение в степень %f\n", chis);
+   return 3;
+   }
+   {
+   float v, chisl;
+   printf("Введите число\n");
+   scanf("%f", &v);
+   printf("Степень\n");
+   scanf("%f", &chisl);
+   float logarithm=log(chisl);
+   printf("Логарифм %f\n", logarithm);
+   return 4;
+   }
+   return 0;
+   }
